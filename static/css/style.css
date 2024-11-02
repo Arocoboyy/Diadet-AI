@@ -1,0 +1,196 @@
+body{
+    background-color: rgba(41,98,222,255);
+}
+div {
+    display: block;
+}
+.main-header{
+    background-color: rgba(204,215,227,255);
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    right:0px;
+    height: 80px;  
+}
+.main-header img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+}
+header{
+    position: sticky;
+    display: block;
+    border: dotted white;
+}
+.header-info{
+    color: rgba(152,77,74,255);
+    padding: 0px;
+    position: absolute;
+    font-size: 52px;
+    left: 80px;
+    text-decoration: none;
+    font-family: Istok-Web;
+    top: 9px;
+}
+.header-info2{
+    color: rgba(152,77,74,255);
+    padding: 0px;
+    position: absolute;
+    font-size: 32px;
+    left: 80px;
+    text-decoration: none;
+    margin-top: 22px;
+}
+.jumbotron{
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: absolute;
+    top: 140px;
+    right: 0px;
+    left: 0px;
+    right:0px;
+    height: 80px;
+    margin: 30px;
+    
+}
+.jumbotron h2{
+    color: rgba(208,241,251,255);
+    font-size: 113px;
+    font-family: Istok-Web;
+}
+.jumbotron h1{
+    color: rgba(208,241,251,255);
+    font-size: 140px;
+    font-family: Istok-Web;
+}
+.box{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    left: 70px;
+    right:0px;
+    height: 80px;
+    margin: 50px;
+}
+.container{
+    background-color: rgba(204,215,227,255);
+    padding: 30px;
+    border : 1px solid #ddd;
+    border-radius: 90px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1300px;
+    height: 1000px;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 90px;
+    position: fixed;
+}
+.tutorial{
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+.tutorial h2{
+    color: rgba(41,98,222,255);
+    font-size: 50px;
+    font-family: Istok-Web;
+    margin-left: 30px;
+}
+.tutorial ol{
+    color: rgba(41,98,222,255);
+    font-size: 30px;
+    font-family: Istok-Web;
+    margin-left: 30px;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+#drop-area{
+    width: 400px;
+    height: 300px;
+    padding: 0px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+#img-view{
+   width: 400px;
+   height: 250px;
+   border-radius: 20px; 
+   border: 2px dashed #9e99d1;
+   background: #f7f8ff;
+   background-position: center;
+   background-size: cover;
+   margin-left: 30px;
+}
+#img-view img{
+    width: 100px;
+    margin: 25px;
+}
+#img-view span{
+    font-size: 12px;
+    color: #777;
+    margin: 15px;
+}
+.iya{
+    position: absolute;
+    margin-left: 700px;
+}
+.iya h2{
+    color: rgba(41,98,222,255);
+    font-size: 50px;
+    font-family: Istok-Web;
+    margin-left: 0px;
+}
+.button{
+    background-color: rgba(41,98,222,255);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    margin-left: 176px;
+    margin-top: 20px;
+}
+.button:hover{
+    background-color: red;
+    color: green;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    margin-left: 176px;
+    margin-top: 20px;
+}
+.hasil{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 400px;
+}
+.hasil h2{
+    color: rgba(41,98,222,255);
+    font-size: 50px;
+    font-family: Istok-Web;
+    margin-left: 0px;
+}
