@@ -32,7 +32,7 @@
         </div>
         <div class="container">
             <div class="tutorial">
-                <h2>Tutorial</h2>
+                <h2>Tahapan</h2>
                 <br><br>
                 <ol>
                     <li>Ambil gambar lidah Anda</li>
@@ -50,8 +50,8 @@
                         <input type="file" name="imagefile" accept="image/*" id="input-file" hidden>
                         <div id="img-view">
                             <img src="../static/images/upload.png">
-                            <p>Drag and drop or click here <br> to upload image!</p>
-                            <span>Upload any images from desktop</span>
+                            <p>Klik, tap, atau tarik gambar lalu lepas <br> untuk menggunggah gambar!</p>
+                            <!-- <span>Upload any images from desktop</span> -->
                         </div>
                     </label>
                     <input type="submit" value="Deteksi" class="button">
@@ -63,7 +63,8 @@
                 <div>
                     <div class="hasil2">
                         {% if prediction %}
-                            <h2>Kamu {{prediction}}!</h2>
+                            <h2>Prognosis: {{prediction}}!</h2>
+                            <h2>Dengan tingkat kepercayaan: {{percent}}%</h2>
                         {% endif %}
                     </div>
                 </div>

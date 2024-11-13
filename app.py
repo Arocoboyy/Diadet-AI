@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, send_from_directory
-from ultralytics import YOLO
 import numpy as np
 import os
 from inference_sdk import InferenceHTTPClient
@@ -23,7 +22,9 @@ def predict():
     )
 
     result=CLIENT.infer(image_path, model_id="diadet-ai/2")
-    return render_template("index.html", prediction=result)
+    pred_class = result['predictions'][0]['class']
+    percent = str(float(result['predictions'][0]['confidence'])*100)[:6]
+    return render_template("index.html", prediction=pred_class, percent=percent)
 
 from inference_sdk import InferenceHTTPClient
 
