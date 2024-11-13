@@ -62,10 +62,9 @@
                 <br><br>
                 <div>
                     <div class="hasil2">
-                        <img src="../static/images/lidah.jpg">
-                        <br><br>
-                        <h3>Kamu tidak diabetes!</h3>
-                        <h3>Pertahankan!</h3>
+                        {% if prediction %}
+                            <h2>Kamu {{prediction}}!</h2>
+                        {% endif %}
                     </div>
                 </div>
             </div>
