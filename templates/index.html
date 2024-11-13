@@ -33,7 +33,7 @@
         <div class="container">
             <div class="tutorial">
                 <h2>Tutorial</h2>
-                <br><br><br>
+                <br><br>
                 <ol>
                     <li>Ambil gambar lidah Anda</li>
                     <li>Unggah gambar lidah di bawah ini</li>
@@ -45,23 +45,29 @@
             <div class="iya">
                 <h2>Deteksi Lidah Anda</h2>
                 <br><br><br>
-                <label for="input-file" id="drop-area">
-                    <input type="file" accept="image/*" id="input-file" hidden>
-                    <div id="img-view">
-                        <img src="../static/images/upload.png">
-                        <p>Drag and drop or click here <br> to upload image!</p>
-                        <span>Upload any images from desktop</span>
-                    </div>
-                </label>
-                <div class="button">
-                    <a>Deteksi</a>
-                </div>
+                <form action="/" method="POST" enctype="multipart/form-data">
+                    <label for="input-file" id="drop-area">
+                        <input type="file" name="imagefile" accept="image/*" id="input-file" hidden>
+                        <div id="img-view">
+                            <img src="../static/images/upload.png">
+                            <p>Drag and drop or click here <br> to upload image!</p>
+                            <span>Upload any images from desktop</span>
+                        </div>
+                    </label>
+                    <input type="submit" value="Deteksi" class="button">
+                </form>
             </div>
             <div class="hasil">
                 <h2>Hasil</h2>
-                <br><br><br>
-                <div class="hasil-img">
-                    <img src="../assets/images/upload.png">
+                <br><br>
+                <div>
+                    <div class="hasil2">
+                        <img src="../static/images/lidah.jpg">
+                        <br><br>
+                        <h3>Kamu tidak diabetes!</h3>
+                        <h3>Pertahankan!</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
