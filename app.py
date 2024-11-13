@@ -1,7 +1,4 @@
 from flask import Flask, render_template, request, send_from_directory
-import tensorflow as tf
-from ultralytics import YOLO
-from tensorflow import expand_dims
 import numpy as np
 import os
 from inference_sdk import InferenceHTTPClient
