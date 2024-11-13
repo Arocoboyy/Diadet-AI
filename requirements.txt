@@ -1,0 +1,3 @@
+Flask
+numpy
+inference_sdk
