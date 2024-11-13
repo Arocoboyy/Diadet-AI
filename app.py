@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, send_from_directory
+from ultralytics import YOLO
 import numpy as np
 import os
 from inference_sdk import InferenceHTTPClient
+import json
 
 app = Flask(__name__)
 
@@ -20,8 +22,7 @@ def predict():
     api_key="dAD9MajKfGlG3TYFTd9r"
     )
 
-    result=CLIENT.infer("diabet2.jpg", model_id="diadet-ai/1")
-
+    result=CLIENT.infer(image_path, model_id="diadet-ai/2")
     return render_template("index.html", prediction=result)
 
 from inference_sdk import InferenceHTTPClient
