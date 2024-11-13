@@ -59,13 +59,13 @@ body {
 
 /* Tutorial and Upload Section */
 .tutorial, .iya, .hasil {
-    margin: 20px;
+    text-align: left;
 }
 
-.tutorial h2, .iya h2, .hasil h2 {
+.tutorial h2, .iya h2, .hasil h2 ol{
     color: rgba(41,98,222,255);
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 /* Drop Area */
