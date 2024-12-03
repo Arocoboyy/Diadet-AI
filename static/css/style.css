@@ -67,7 +67,11 @@ body {
     font-size: 2rem;
     text-align: left;
 }
-
+.hasil h3{
+    color: rgba(41,98,222,255);
+    font-size: 2rem;
+    text-align: left;
+}
 /* Drop Area */
 #drop-area, #img-view {
     max-width: 100%;
@@ -147,4 +151,13 @@ body {
     .button {
         padding: 10px 15px;
     }
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+.uploaded-message {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
 }
