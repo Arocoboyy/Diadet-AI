@@ -57,13 +57,20 @@
                 </form>
             </div>
             <div class="hasil">
-                <h2>Hasil</h2>
+                <h3>Hasil</h3>
                 <br><br>
                 <div>
                     <div class="hasil2">
                         {% if prediction %}
                             <h2>Prognosis: {{prediction}}!</h2>
                             <h2>Dengan tingkat kepercayaan: {{percent}}%</h2>
+                        {% endif %}
+                        {% if image_file %}
+                            <div class="uploaded-message">Ini foto anda!</div>
+                            <img src="{{ url_for('display_image', filename=image_file) }}" alt="Uploaded Image" style="max-width: 500px;">
+                        {% endif %}
+                        {% if error %}
+                            <div class="error-message">{{ error }}</div>
                         {% endif %}
                     </div>
                 </div>
@@ -73,10 +80,6 @@
     <footer>
 
     </footer>
-
-    <script type="text/javascript" src="../static/script.js"></script>
-</body>
-</html>
 
     <script type="text/javascript" src="../static/script.js"></script>
 </body>
